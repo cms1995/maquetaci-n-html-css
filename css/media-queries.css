@@ -1,0 +1,32 @@
+@media(max-width: 900px){
+    .blogs-main-new{
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr;
+    }
+    /* una vez q pasemos los 900px, quiero q el grid-template-columns q generamos cambie. Y tenga ahora una fraccion 
+    Pero entonces, como de esa fraccion tengo 2 columnas con 2 lineas, quiero q el grid-template, en vez de 2 tenga 3 filas, porque mi contenido se va a bajar*/
+    .blogs-news-img-container{
+        grid-row: 2;
+    }
+    .blogs-news-info-container{
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .blogs-posts-container .post-container{
+        max-width: 45%;
+    }
+    /* sobre_mi.html */
+    .proyect-main-container{
+        grid-template-columns: 1fr 1fr;  /*con esto, las columnas de los proyectos, de 3 pasan a 2 */
+        grid-template-rows: 2fr;
+    }
+    .profile-main-container .profile-container{
+        display: block;
+    }
+}
+
+@media(max-width: 600px){
+    .blogs-posts-container .post-container{
+        max-width: 95%;
+    }
+}
